@@ -7,12 +7,15 @@
     />
   </head>
   <body>
-
-    <h1>Hello</h1>
-    
+    <div id="button">
+      <button id="greenFlag">Start</button>
+    </div>
+      
     <div id="project"></div>
 
     <script type="module">
+      document.getElementById("button").innerHTML = "";
+      
       import project from "./index.js";
 
       project.attach("#project");
